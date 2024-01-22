@@ -2,9 +2,11 @@
 
 # Default values for repository link, commit hash, and tag name
 # repository_link="https://github.com/NirusanLK/shell_test.git"
-commit_hash=$1
-tag_name= $2
+commit_hash="754e4a2478ec362d89fdd14a56f8b900712a4e98"
+tag_name="tag3.0"
 
+# echo $commit_hash
+# echo $tag_name
 # Change directory to the cloned repository
 cd /home/nirusan-intern/shell_test || { echo "Error: Unable to change directory"; exit 1; }
 
