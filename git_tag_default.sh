@@ -2,8 +2,8 @@
 
 # Default values for repository link, commit hash, and tag name
 # repository_link="https://github.com/NirusanLK/shell_test.git"
-commit_hash="754e4a2478ec362d89fdd14a56f8b900712a4e98"
-tag_name="tag3.0"
+commit_hash="36670db9b65834d69a0fdc9de7ec089fde90d183"
+tag_name="tag4.0"
 
 # echo $commit_hash
 # echo $tag_name
