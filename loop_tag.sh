@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Defined variable for storing tag name 
+tag_name="Release1.1.1"
+
 # Getting the tag message from user
 read -p "Enter the tag message :" tag_message
 
@@ -20,7 +23,7 @@ for ((i=1; i<=3; i++)); do
     git config advice.objectNameWarning false
 
     # Create a git tag with commit hash
-    git tag -a "release1.1" $commit_hash -m "$tag_message"  || { echo "Error: unable to tag in the remot repo"; exit 1; }
+    git tag -a $tag_name $commit_hash -m "$tag_message"  || { echo "Error: unable to tag in the remot repo"; exit 1; }
 
     # Push the tag to the remote repository
     git push origin $tag_name || { echo "Error: Unable to push to the remote repo"; exit 1; }
